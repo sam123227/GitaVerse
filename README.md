@@ -31,9 +31,9 @@ npm install
 npm run dev
 
 
-## Screenshot
+## **Screenshot**
 
-![GitaVerse](./screenshots/gita.png)
+![GitaVerse](screenshots/gita.png)
 
 ## Live Demo
 
