@@ -30,7 +30,7 @@ cd gita-verse
 npm install
 npm run dev
 
-
+```
 ## **Screenshot**
 
 ![GitaVerse](screenshots/gita.png)
