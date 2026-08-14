@@ -51,12 +51,12 @@ export default async function VersesPage({
           </div>
         ))}
       </section>
-      <section>
-        <div className="flex items-center justify-between pt-6">
+      <section className="mx-auto max-w-4xl px-4">
+        <div className="mt-8 flex items-center justify-between">
           {start > 1 ? (
             <Link
               href={`/chapters/${id}/verses/${previousStart}-${previousEnd}`}
-              className="rounded-lg border px-4 py-2 hover:bg-gray-100"
+              className="rounded-lg border px-4 py-2 "
             >
               Previous
             </Link>
@@ -66,7 +66,7 @@ export default async function VersesPage({
           {end < totalVerses ? (
             <Link
               href={`/chapters/${id}/verses/${nextStart}-${nextEnd}`}
-              className="rounded-lg border px-4 py-2 hover:bg-gray-100"
+              className="rounded-lg border px-4 py-2 "
             >
               Next
             </Link>
