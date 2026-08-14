@@ -4,14 +4,14 @@ A responsive Bhagavad Gita web application built with Next.js, TypeScript, and T
 
 ## Features
 
-- 📖 Browse all 18 chapters of the Bhagavad Gita
-- 📜 Read individual verses with Sanskrit text and English translations
-- 🔖 Bookmark meaningful verses
-- 💾 Persist bookmarks using localStorage
-- 🗑️ Remove bookmarked verses
-- 🌙 Light/Dark theme
-- 📱 Responsive and clean UI
-- ⬅️➡️ Navigate between verse ranges
+-  Browse all 18 chapters of the Bhagavad Gita
+-  Read individual verses with Sanskrit text and English translations
+-  Bookmark meaningful verses
+-  Persist bookmarks using localStorage
+-  Remove bookmarked verses
+-  Light/Dark theme
+-  Responsive and clean UI
+-  Navigate between verse ranges
 
 ## Technologies Used
 
@@ -30,14 +30,17 @@ cd gita-verse
 npm install
 npm run dev
 
-**##Screenshot**
+
+## Screenshot
+
 ![GitaVerse](./screenshots/gita.png)
 
-**##Live Demo**
+## Live Demo
 
 https://gita-verse-nine.vercel.app/
 
-**##Data Source**
+## Data Source
 
 Verse and chapter data is retrieved from the Vedic Scriptures Bhagavad Gita API.
+
 This is an independent project and is not affiliated with or endorsed by the API maintainers.
