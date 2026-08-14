@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitaVerse
 
-## Getting Started
+A responsive Bhagavad Gita web application built with Next.js, TypeScript, and Tailwind CSS. Users can explore chapters, read verses, bookmark meaningful verses, and switch between light and dark themes.
 
-First, run the development server:
+## Features
+
+- 📖 Browse all 18 chapters of the Bhagavad Gita
+- 📜 Read individual verses with Sanskrit text and English translations
+- 🔖 Bookmark meaningful verses
+- 💾 Persist bookmarks using localStorage
+- 🗑️ Remove bookmarked verses
+- 🌙 Light/Dark theme
+- 📱 Responsive and clean UI
+- ⬅️➡️ Navigate between verse ranges
+
+## Technologies Used
+
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+- Vedic Scriptures Bhagavad Gita API
+- LocalStorage
+
+## Installation
 
 ```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd gita-verse
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**##Screenshot**
+![GitaVerse](./screenshots/gita.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**##Live Demo**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://gita-verse-nine.vercel.app/
 
-## Learn More
+**##Data Source**
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Verse and chapter data is retrieved from the Vedic Scriptures Bhagavad Gita API.
+This is an independent project and is not affiliated with or endorsed by the API maintainers.
