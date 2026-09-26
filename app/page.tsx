@@ -3,17 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-white text-black dark:bg-gray-900 dark:text-white">
-
+    <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="px-4 py-20 text-center">
+      <section className="px-4 py-16 text-center sm:py-20">
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
           Discover the wisdom of Bhagavad Gita
         </h1>
 
-        <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
+        <p className="mx-auto mt-5 max-w-2xl text-base text-gray-600 dark:text-gray-300 sm:text-lg">
           Explore the teachings of Bhagavad Gita
         </p>
 
@@ -26,8 +25,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="px-4 py-12">
-        <div className="mx-auto max-w-3xl rounded-2xl border bg-white p-8 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-10">
+      <section className="px-4 py-10 sm:py-12">
+        <div className="mx-auto max-w-3xl rounded-2xl border bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-8 md:p-10">
           <h2 className="text-center text-2xl font-bold md:text-3xl">
             About the Bhagavad Gita
           </h2>
@@ -43,9 +42,8 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="px-4 py-12">
+      <section className="px-4 py-10 sm:py-12">
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
-
           <div className="rounded-xl border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
             <h3 className="text-xl font-bold">Chapters</h3>
 
@@ -69,10 +67,8 @@ export default function Home() {
               Save meaningful verses for later.
             </p>
           </div>
-
         </div>
       </section>
-
     </div>
   );
 }

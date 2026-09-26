@@ -1,5 +1,6 @@
-import Navbar from '../components/Navbar';
-import Link from 'next/link';
+import Navbar from "../components/Navbar";
+import Link from "next/link";
+
 const chapters = [
   { id: 1, title: "Arjuna Visada Yoga" },
   { id: 2, title: "Sankhya Yoga" },
@@ -21,20 +22,30 @@ const chapters = [
   { id: 18, title: "Moksha Sanyasa Yoga" },
 ];
 
-export default function Chapters(){
-    return(
-        <main className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
-            <Navbar/>
-            <h1 className="text-2xl font-bold text-center mt-4">Bhagavad Gita Chapters</h1>
-            <div className="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">
-            {chapters.map((chapter)=>(
-                <Link key={chapter.id} href={`/chapters/${chapter.id}`} className="rounded-lg border p-6 shadow-sm">
-                    <h2 className="text-xl font-bold">Chapter {chapter.id} </h2>
-                    <p className="mt-2">{chapter.title}</p>
-                </Link>
-            ))}
-            </div>
-        </main>
+export default function Chapters() {
+  return (
+    <main className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
+      <Navbar />
 
-    );
+      <h1 className="mt-6 px-4 text-center text-2xl font-bold sm:mt-8 sm:text-3xl">
+        Bhagavad Gita Chapters
+      </h1>
+
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-6 sm:p-6 md:grid-cols-2 lg:grid-cols-3">
+        {chapters.map((chapter) => (
+          <Link
+            key={chapter.id}
+            href={`/chapters/${chapter.id}`}
+            className="rounded-lg border p-5 shadow-sm transition hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 sm:p-6"
+          >
+            <h2 className="text-xl font-bold">Chapter {chapter.id}</h2>
+
+            <p className="mt-2 break-words text-gray-600 dark:text-gray-300">
+              {chapter.title}
+            </p>
+          </Link>
+        ))}
+      </div>
+    </main>
+  );
 }

@@ -10,19 +10,19 @@ export default function ThemeToggle() {
   }, []);
 
   function toggleTheme() {
-    const currentDark =
-      document.documentElement.classList.contains("dark");
+    const currentDark = document.documentElement.classList.contains("dark");
 
     const newTheme = !currentDark;
 
     document.documentElement.classList.toggle("dark", newTheme);
+
     setDark(newTheme);
   }
 
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-lg border px-3 py-2"
+      className="whitespace-nowrap rounded-lg border px-3 py-2 text-sm sm:text-base"
     >
       {dark ? "☀️ Light" : "🌙 Dark"}
     </button>
